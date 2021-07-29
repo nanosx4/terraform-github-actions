@@ -1,13 +1,13 @@
 #The configuration for the `remote` backend.
 terraform {
   backend "remote" {
-    organization="mateusz"
+    organization = "mateusz"
     workspaces {
       name = "terraform-github-actions"
     }
   }
 }
-     # An example resource that does nothing.
+# An example resource that does nothing.
 resource "null_resource" "example" {
   triggers = {
     value = "A example resource that does nothing!"
