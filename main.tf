@@ -7,9 +7,8 @@ terraform {
     }
   }
 }
-# An example resource that does nothing.
-resource "null_resource" "example" {
-  triggers = {
-    value = "A example resource that does nothing!"
-  }
+
+resource "aws_api_gateway_rest_api" "LicytomatAPI" {
+  name        = "LicytomatAPI"
+  description = "API for Licytomat project"
 }
