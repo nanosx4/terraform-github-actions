@@ -1,8 +1,8 @@
 terraform {
   backend "remote" {
-    organization = "mateusz"
+    organization = "<your organization name>"
     workspaces {
-      name = "terraform-github-actions"
+      name = "<your workspace name>"
     }
   }
   required_version = ">= 0.14.7"

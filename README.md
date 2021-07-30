@@ -8,7 +8,7 @@ https://learn.hashicorp.com/tutorials/terraform/github-actions#set-up-terraform-
 
 Next save token in Github secrets as `TF_API_TOKEN`:
 
-https://learn.hashicorp.com/tutorials/terraform/github-actions#set-up-terraform-cloud
+https://learn.hashicorp.com/tutorials/terraform/github-actions#set-up-a-github-repository
 
 Fork this repo and modify `main.tf` file providing your `organization` and `workspace` names.
 
