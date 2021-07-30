@@ -1,6 +1,9 @@
 resource "aws_api_gateway_rest_api" "DemoAPI" {
   name        = "DemoAPI"
   description = "Simple Demo API project"
+  endpoint_configuration {
+    types = ["REGIONAL"]
+  }
 }
 
 resource "aws_api_gateway_deployment" "DemoAPIDeployment" {
