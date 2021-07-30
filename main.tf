@@ -1,4 +1,3 @@
-#The configuration for the `remote` backend.
 terraform {
   backend "remote" {
     organization = "mateusz"
@@ -6,13 +5,9 @@ terraform {
       name = "terraform-github-actions"
     }
   }
+  required_version = ">= 0.14.7"
 }
 
 provider "aws" {
-    region = "eu-west-1"
-}
-
-resource "aws_api_gateway_rest_api" "LicytomatAPI" {
-  name        = "LicytomatAPI"
-  description = "API for Licytomat project"
+  region = var.aws_region
 }
