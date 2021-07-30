@@ -20,7 +20,7 @@ terraform {
       name = "<your workspace name>"
     }
   }
-  required_version = ">= 0.14.7"
+  required_version = ">= 1.0.0"
 }
 ```
 
@@ -47,20 +47,20 @@ Response:
 ```
 Welcome to our demo API, here are the details of your request:
 
- ***Headers***
+==Headers==
 Accept: */*
 Content-Type: application/json
 Host: z60do1e422.execute-api.eu-west-1.amazonaws.com
 User-Agent: curl/7.55.1
 
- ***Method***
+==Method==
 POST
 
- ***Body***
+==Body==
 "'{username:xyz,password:xyz}'"
 ```
 
-*Most of tools add some default headers to the REST requests - don't be suprised if there some extra headers in the response.
+*some additional default headers (specific to the tool you use when testing) may appear.
 
 ## Clean stack
 In order to clean stack go to Actions tab and select `Clean the stack` workflow. Next click `Run workflow` - it will trigger terraform destroy command. 
